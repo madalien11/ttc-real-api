@@ -1,1 +1,1 @@
-web: gunicorn drf_api.wsgi:application --log-file - --log-level debug
+web: gunicorn drf_api.wsgi --log-file -
