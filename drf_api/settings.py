@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '+=xq3$^d81n%izs75(n(l7k=xhf&lq1(a!siir#(it-on*7r6@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['ttc-api-auth.herokuapp.com', '127.0.0.1']
 
