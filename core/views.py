@@ -23,6 +23,13 @@ class PostView(mixins.ListModelMixin, mixins.CreateModelMixin, generics.GenericA
         return self.create (request, *args, **kwargs)
 
 
+from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
+from rest_auth.registration.views import SocialLoginView
+
+class GoogleLogin(SocialLoginView):
+    adapter_class = GoogleOAuth2Adapter
+
+
 # class TestView(APIView):
 
 #     permission_classes = (IsAuthenticated, )
